@@ -238,3 +238,57 @@ footer .footer_rights {
   font-weight: 500;
   transform: skewY(6deg); /* undo skew for text */
 }
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #6c63ff;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #a593ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  color: #a593ff;
+}
